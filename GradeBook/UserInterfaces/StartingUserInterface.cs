@@ -39,9 +39,9 @@ namespace GradeBook.UserInterfaces
                 Console.WriteLine("Command not valid, Create requires a name and type of gradebook.");
                 return;
             }
-            var name = parts[1];
-            var type = parts[3];
             BaseGradeBook gradeBook;
+            var name = parts[1];
+            var type = parts[2];
             if (type == "standard")
             {
                 gradeBook = new StandardGradeBook(name);

@@ -16,7 +16,7 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count < 5)
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("You must have more than 5 students to do ranked grading");
             }
             
             if ((averageGrade / 100) >= .8 )
